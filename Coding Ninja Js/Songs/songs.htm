@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./song.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Music Player</h1>
+      <button id="toggle-theme">Toggle Theme</button>
+    </header>
+    <div class="main">
+      <section id="all-songs">
+        <h2>All Songs</h2>
+        <input type="text" id="search" placeholder="Filter by genre">
+        <ul id="song-list"></ul>
+      </section>
+      <section id="song-card">
+        <h2>Now Playing</h2>
+        <div id="current-song">
+          <img id="song-image" src="" alt="Song Image">
+          <div>
+            <p id="song-name">Song Name</p>
+            <p id="artist-name">Artist Name</p>
+          </div>
+        </div>
+        <div id="controls">
+          <button id="prev">Prev</button>
+          <button id="play-pause">Play</button>
+          <button id="next">Next</button>
+          <button id="add-to-playlist">Add to Playlist</button>
+        </div>
+      </section>
+      <section id="playlists">
+        <h2>Playlists</h2>
+        <input type="text" id="new-playlist-name" placeholder="New Playlist Name">
+        <button id="create-playlist">Create Playlist</button>
+        <ul id="playlist-list"></ul>
+      </section>
+    </div>
+  </div>
+  <script src="./songs.js"></script>
+</body>
+</html>

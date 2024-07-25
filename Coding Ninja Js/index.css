@@ -1,0 +1,65 @@
+body {
+    font-size: 20px;
+    text-align: center;
+  }
+  .my-class {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  #my-id {
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  button {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  } 
+  .card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    font-size: 2rem;
+    transition: opacity 1s;
+
+  }
+  .user-card{
+    width:300px;
+    padding:20px;
+    background: linear-gradient(#deffde , #5f97ff);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    transition: transform 0.3s ease;
+    margin:20px;
+  }
+
+  .other::before{
+    width: 100%;
+    position: absolute;
+    top: -4rem;
+  }
+  .back{
+    transform:scale(0.6) translateY(0.5rem);
+  }
+  .user-card:hover{
+    transform: translateY(-5px);
+  }
+
+.user-card img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}

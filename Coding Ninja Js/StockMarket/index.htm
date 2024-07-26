@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Market Analysis</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div id="app">
         <div id="chart-section">
             <h2>Stock Chart</h2>
-            <div id="chart"></div>
+            <canvas id="stockChart"></canvas>
             <div id="chart-controls">
                 <button data-range="1m">1 Month</button>
                 <button data-range="3m">3 Months</button>
                 <button data-range="1y">1 Year</button>
                 <button data-range="5y">5 Years</button>
             </div>
+            <div id="chart-summary">
+                <p id="peak-value"></p>
+                <p id="low-value"></p>
+            </div>
         </div>
         <div id="list-section">
             <h2>Stock List</h2>
-            <ul id="stock-list">
-            </ul>
+            <ul id="stock-list"></ul>
         </div>
-        <div id="detail-section">
+        <div id="details-section">
             <h2>Stock Details</h2>
-            <div id="details">
-            </div>
+            <div id="details"></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="assets/js/api.js"></script>
+    <script type="module" src="assets/js/chart.js"></script>
+    <script type="module" src="assets/js/list.js"></script>
+    <script type="module" src="assets/js/details.js"></script>
 </body>
 </html>

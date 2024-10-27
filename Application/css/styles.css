@@ -230,3 +230,97 @@ h1, h2, h3, p {
   font-size: 0.9em;
   color: #ccc;
 }
+
+/* Form styles */
+.form-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #f4f4f4;
+}
+
+.form {
+  max-width: 450px;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Form labels as tabs */
+.form-label {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  padding: 1em 0;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+}
+
+input#signin:checked ~ .form-label[for="signin"],
+input#signup:checked ~ .form-label[for="signup"] {
+  background: #ff6347;
+  color: white;
+}
+
+
+.signin-form,
+.signup-form {
+  display: none;
+  padding-top: 1em;
+}
+
+input#signin:checked ~ .signin-form {
+  display: block;
+
+}
+
+input#signup:checked ~ .signup-form {
+  display: block;
+}
+
+/* Input fields and buttons */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form button {
+  width: 92.5%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: -webkit-fill-available;
+}
+
+form button:hover {
+  background: #ee3919;
+}
+
+/* Text styling */
+.form-text {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.form-text label {
+  color: #ff6347;
+  cursor: pointer;
+  font-weight: bold;
+}

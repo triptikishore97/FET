@@ -1,0 +1,60 @@
+.borrowed {
+  margin-top: 30px;
+  padding: 10px 0;
+  border-top: 2px solid #e0e0e0;
+}
+
+.borrowed h2 {
+  color: #004d40;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  text-align: left;
+  border-bottom: 2px solid #c8e6c9;
+  padding-bottom: 6px;
+}
+
+.borrowed .empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+/* Each borrowed book card spacing */
+.borrowed .book-card {
+  margin-bottom: 10px;
+}
+
+/* Scroll behavior for borrowed section (if many books) */
+.borrowed {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.borrowed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.borrowed::-webkit-scrollbar-thumb {
+  background-color: #a5d6a7;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .borrowed {
+    padding: 5px;
+  }
+
+  .borrowed h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .borrowed h2 {
+    font-size: 1.1rem;
+  }
+}

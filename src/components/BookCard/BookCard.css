@@ -1,0 +1,36 @@
+.book-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dbe7f2;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background: #f1f8ff;
+}
+
+.book-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+button {
+  background: #1976d2;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125699;
+}
+
+.return-btn {
+  background: #d32f2f;
+}
+
+.return-btn:hover {
+  background: #b71c1c;
+}

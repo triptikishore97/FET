@@ -1,0 +1,1 @@
+export const MAX_BORROW_LIMIT = 2;
